@@ -40,7 +40,9 @@ body{
     display:none;
     margin-bottom:10px;
   }
-  .input[type="text"] {
+  .yp{
       color: brown;
+     
+      margin-left: 1px;
   }
   
