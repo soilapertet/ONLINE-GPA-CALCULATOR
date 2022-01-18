@@ -1,5 +1,6 @@
 body{
     background-color: rgb(181, 197, 197);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .center {
@@ -25,7 +26,7 @@ body{
     margin-left: 12%;
     line-height:35px;
     text-align:center;
-    background:#1172c2;
+    background:orangered;
     color:#fff;
     font-size:15px;
     text-transform:Uppercase;
@@ -45,18 +46,45 @@ body{
   }
   #uname, #email, textarea {
     width: 70%;
-    border: 1px solid blue;
+    border: 1px solid orangered;
     border-radius: 8px;
     /* box-sizing: border-box; */
     resize: vertical;
   }
   
   label {
-      color: white;
+      color: orangered;
       font-weight: bold;
       font-style: italic;
       text-align: left;
   }
   #tit{
       display: none;
+  }
+  button{
+      color: white;
+      width: 95px;
+      border: none !important;
+      background-color: orangered;
+      border-radius:12px;
+  }
+  #save{
+      background-color: orangered;
+      border-radius:12px;
+      border: none !important;
+      width: 100px;
+      justify-items: center;
+      color: #fff;
+      font-weight: bold;
+  }
+  #save:hover{
+      opacity: .4;   
+  }
+  #smessage {
+      background-color: orangered;
+      border-radius:12px;
+      border: none !important;
+      width: 120px;
+      color: #fff;
+      font-weight: bold;
   }
