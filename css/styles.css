@@ -1,3 +1,43 @@
 body{
     background-color: rgb(181, 197, 197);
 }
+
+.center {
+    height:50%;
+    display:flex;
+    align-items:center;
+    /* justify-content:center; */ 
+  }
+  .form-input {
+    width:230px;
+    padding:20px;
+    background:#fff;
+  }
+
+  .form-input input {
+    display:none;
+  
+  }
+  .form-input label {
+    display:block;
+    width:75%;
+    height:35px;
+    margin-left: 12%;
+    line-height:35px;
+    text-align:center;
+    background:#1172c2;
+    color:#fff;
+    font-size:15px;
+    font-family:"Open Sans",sans-serif;
+    text-transform:Uppercase;
+    font-weight:bold;
+    border-radius:25px;
+    cursor:pointer;
+  }
+  
+  .form-input img {
+    width:100%;
+    display:none;
+    margin-bottom:10px;
+  }
+  
