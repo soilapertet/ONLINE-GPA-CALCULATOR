@@ -12,15 +12,41 @@
     <div class="container m-5">
         <h1>Update Profile</h1>
 
-        <div class="center">
+        <div class="center m-3 p-3">
             <div class="form-input">
               <div class="preview">
                 <img id="file-ip-1-preview">
               </div>
-              <label for="file-ip-1">Upload Image</label>
+              <label for="file-ip-1">Upload Picture</label>
               <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
             </div>
         </div> 
+        <form>
+            <div class="form-group row">
+                <div class="container text-center-5">
+                    <form action="" class="p-3" id="profileForm ">
+                        <div class="form-group container">
+                            <p>Update Your Personal Information Here</p>
+                            <input type="text" id="name" class="form-control mb-3" placeholder="Full Name" >
+                            <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number" >
+                            <select class="form-select mb-3" id="topping">
+                                <option value="">Select your highest level of learning</option>
+                                <option value="1">Phd</option>
+                                <option value="2">Masters Degree</option>
+                                <option value="3">Bachelors Degree</option>
+                                <option value="3">Higher Diploma</option>
+                                <option value="3">Diploma</option>
+                                <option value="3">O-level</option>
+                                <option value="3">High School Graduate</option>
+                            </select>
+                            <input type="text" id="institute" class="form-control mb-3" placeholder="Institution Of learning" >
+                            <input type="text" id="experience" class="form-control mb-3" placeholder="Experience Field" >
+                            <input type="submit" id="save" class="save" value="Update" />
+                        </div>
+                
+                    </form>
+                </div>
+          </form>
           
     </div>
 
