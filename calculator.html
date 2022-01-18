@@ -35,16 +35,18 @@
         <p>
           <img src="img/GPAformula.png" alt="Image of GPA formula">
           <br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-          Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis 
-          sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. 
-          Vestibulum lacinia arcu eget nulla. 
+          Where:
+          <br>
+           Total Points Earned = Sum(Grade Point Average * Course Credits) 
+           <br>
+           Total Credits Attempted = Sum of Course Credits taken
         </p>
       <h2>GPA Reference Scale</h2>
       <img src="img/GPAcalculationimage.png" alt="Image of GPA reference scale">
-      <p>We'll use the 4.0 scale for the calculator</p>
+      <br>
       <br>
     <div id="semesters">
+      <h1>Let's get that GPA!!</h1>
       <div class="semester">
         <div class="card">
           <div class="card-header">
@@ -79,7 +81,6 @@
                   </div>
                   <div class="col-md-2">
                     <button type="button" class="close" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                 </div>
@@ -112,7 +113,6 @@
                   </div>
                   <div class="col-md-2">
                     <button type="button" class="close" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                 </div>
@@ -145,7 +145,6 @@
                   </div>
                   <div class="col-md-2">
                     <button type="button" class="close" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                 </div>
@@ -177,14 +176,13 @@
                     </select>
                   </div>
                   <div class="col-md-2">
-                    <button type="button" class="close" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
+                    <button type="button" id="remove-course" class="close" aria-label="Delete Course">
                     </button>
                   </div>
                 </div>
               </div>
               <br>
-              <button class="button-17" id="add-course">Add Course</button>
+              <button type="button" id="add-course" class="add" aria-label="Add Course"></button>
             </form>
           </div>
         </div>
@@ -194,11 +192,10 @@
       <button class="button-17" id="calculate">Calculate GPA</button>
     </div>
     <br>
+    <br>
     <div id="display">
-      <h2>Your Current GPA is:</h2>
-      <div id="burst-12">
-  
-      </div>
+      <div class="progress-circle" id="gpa"></div>
+      <div id="display-chances"></div>
     </div>
   </div>
 </body>
