@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container m-5">
+    <div class="container m-5 profile">
         <h1>Update Profile</h1>
 
         <div class="center m-3 p-3">
@@ -27,8 +27,8 @@
 
         <div class="container text-center-5 yp">
             <div class="row">
-                <div class="col-sm">
-                    <form action="" class="" id="profileForm ">
+                <div class="col-sm prof">
+                    <form action="" class="proff" id="profileForm ">
                         <div class="form-group container">
                             <p>Update Your Personal Information Here</p>
                             <input type="text" id="name" class="form-control mb-3" placeholder="Full Name">
@@ -46,30 +46,50 @@
                             <input type="text" id="institute" class="form-control mb-3"
                                 placeholder="Institution Of learning">
                             <input type="text" id="experience" class="form-control mb-3" placeholder="Experience Field">
-                            <input type="submit" id="save" class="save" value="Update" />
+                            <input type="button" id="save" class="save" value="Update" />
                         </div>
                     </form>
+
+                    <div id="end">
+                        <h1 id="tit" class="">hello</h1>
+                    </div>
+
                 </div>
 
                 <div class="col-sm bg-dark">
-                    <h1>Want to calculate your GPA</h1>
+                    <h3>Notices</h3>
+                    <p>Are you a hogh school graduate and would like to apply for higher learning
+                        for higher learning institution? Click here to read more.
+                    </p> 
+                    <p>
+                        Are you a graduate and would like to apply for scholarships. Here is a list of scholarships you can apply. <br>
+                        Read More
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+                        nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                    <button id="myBtn">Read less</button>    
+                    <button id="myBt">Read more</button>    
                 </div>
             </div>
 
         </div>
 
+        
+
     </div>
 
-    <div class="container bg-warning text-center">
+    <div class="container bg-warning text-center p-4">
         <h2>Contact Us</h2>
-        <div>
+        <div class="container">
             <form action="">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="Input Your Name">
-                <label for="name">Your Name Address</label>
-                <input type="email" id="email" placeholder="Input Your Email Address">
-                <label for="subject">Subject</label>
-                <textarea id="message" name="message" placeholder="Write Message.." style="height:200px"></textarea>
+                <label for="name">Your Name</label> <br>
+                <input type="text" id="uname"class="p-2"  placeholder="Input Your Name"> <br>
+                <label for="name">Your Name Address</label> <br>
+                <input type="text" id="email" class="p-2" placeholder="Input Your Email Address"> <br>
+                <label for="message">Message</label> <br>
+                <textarea id="message" name="message" class="p-3" placeholder="Write Message.." style="height:200px"></textarea> <br>
+
+                <input type="submit" value="Send Message">
             </form>
         </div>
 

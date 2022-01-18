@@ -28,7 +28,6 @@ body{
     background:#1172c2;
     color:#fff;
     font-size:15px;
-    font-family:"Open Sans",sans-serif;
     text-transform:Uppercase;
     font-weight:bold;
     border-radius:25px;
@@ -42,7 +41,22 @@ body{
   }
   .yp{
       color: brown;
-     
       margin-left: 1px;
   }
+  #uname, #email, textarea {
+    width: 70%;
+    border: 1px solid blue;
+    border-radius: 8px;
+    /* box-sizing: border-box; */
+    resize: vertical;
+  }
   
+  label {
+      color: white;
+      font-weight: bold;
+      font-style: italic;
+      text-align: left;
+  }
+  #tit{
+      display: none;
+  }
