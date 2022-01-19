@@ -133,3 +133,7 @@ button#remove-semester
   text-align:center;
   margin-top:10px;
 }
+#gpa-history
+{
+  display:none;
+}
