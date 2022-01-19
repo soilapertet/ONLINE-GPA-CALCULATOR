@@ -1,23 +1,78 @@
 
+//profile form validation
 function validateForm() {
   var name= document.getElementById("name").value;
   var phone= document.getElementById("phone").value;
+  var level= document.getElementById("level").value;
+  var institute= document.getElementById("institute").value;
   if( name== ""){
-      alert("Name required");
+      alert("please Enter your name");
   }else if( phone ==""){
-    alert("Phone required");
-    
+    alert("Please input your phone number");
+
+  }else if( level==""){
+    alert("Please select your Level");
+  }else if( institute ==""){
+    alert("Please enter your institute");
   }
   else{
     return true;
-  }
-}
+  };
+};
 //function for image upload
 function showPreview(event){
-    if(event.target.files.length > 0){
-      var src = URL.createObjectURL(event.target.files[0]);
-      var preview = document.getElementById("file-ip-1-preview");
-      preview.src = src;
-      preview.style.display = "block";
-    }
-  }
+  if(event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("file-ip-1-preview");
+    preview.src = src;
+    preview.style.display = "block";
+  };
+};
+
+$(document).ready(function() {
+
+  $("#myBt").click(function(){
+    $("p").show();
+    $("#more").show();
+    $("#dot").hide();
+    $("#myBtn").show();
+    $("#myBt").hide();
+    $(".list").show();
+
+});
+$("#myBtn").click(function(){
+  $("#more").hide();
+  $("#dot").show();
+  $("#myBt").show();
+  $("#myBtn").hide();
+  $(".list").hide();
+});
+$("#save").click(function(e){
+  e.preventDefault();
+  var name = $('#name').val();
+  var phone = $('#phone').val();
+  var level = $('#level').val();
+  var institute= $('#institute').val();
+  var experience = $('#experience').val();
+
+  $("#upName").html("Yours Name:" + name);
+  $("#upPhone").html("Your Phone:" + phone);
+  $("#uplevel").html("Your Level:" + level);
+  $("#inst").html("Your Institute:" + institute);
+  $("#exp").html("Your Experience:" + experience);
+  document.getElementById("myForm").reset();
+  $(".pic").hide();
+});
+
+
+});
+
+
+
+
+
+
+
+
+
+         

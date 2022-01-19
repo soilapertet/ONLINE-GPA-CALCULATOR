@@ -13,7 +13,32 @@
 
 <body>
     <div class="container mt-5 profile">
-        <h1>Update Profile</h1>
+        <h1> Update Profile</h1>
+
+        <div class="row">
+            <div class="center col-sm m-3 p-3">
+                <div class="form-input">
+                    <div class="preview">
+                        <img id="file-ip-1-preview">
+                    </div>
+                    <div class="pic">
+                        <label for="file-ip-1" id="file-ip">Upload Picture</label>
+                        <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                    </div>
+                </div>
+            </div>
+            <div class="center col-sm m-3 p-3">
+                <div id="seeProfile">
+                    <h1 id="tit" class="">Here is your updated profile information</h1>
+                    <p id="upName"></p>
+                    <p id="upPhone"></p>
+                    <p id="uplevel"></p>
+                    <p id="inst"></p>
+                    <p id="exp"></p>
+                </div>     
+            </div>
+
+        </div>
 
         <!-- <div class="center m-3 p-3">
             <div class="form-input">
@@ -28,7 +53,7 @@
         <div class="container text-center-5 yp">
             <div class="row">
                 <div class="col-sm mb-5 pb-5">
-                    <div class="center m-3 p-3 pb-0 mb-0">
+                    <!-- <div class="center m-3 p-3 py-0 my-0 ">
                         <div class="form-input">
                             <div class="preview">
                                 <img id="file-ip-1-preview">
@@ -36,7 +61,7 @@
                             <label for="file-ip-1">Upload Picture</label>
                             <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
                         </div>
-                    </div>
+                    </div> -->
                     <form id="myForm" name="myForm" action ="" class="form-control p-5 proff" onsubmit="validateForm()" >
                         <div class="form-group container">
                             <p>Update Your Personal Information Here</p>
@@ -44,14 +69,14 @@
                             <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number" > 
                             <select class="form-select mb-3" id="level" >
                                 <option value="">Select your highest level of learning</option>
-                                <option value="1">Phd</option>
-                                <option value="2">Masters Degree</option>
-                                <option value="3">Bachelors Degree</option>
-                                <option value="4">Higher Diploma</option>
-                                <option value="5">Diploma</option>
-                                <option value="6">O-level</option>
-                                <option value="7">High School Graduate</option>
-                                <option value="8">Not Applicable</option>
+                                <option value="phd">Phd</option>
+                                <option value="masters">Masters Degree</option>
+                                <option value="bachelor">Bachelors Degree</option>
+                                <option value="hDip">Higher Diploma</option>
+                                <option value="dip">Diploma</option>
+                                <option value="level">O-level</option>
+                                <option value="high">High School Graduate</option>
+                                <option value="notA">Not Applicable</option>
                             </select>
                             <input type="text" id="institute" class="form-control mb-3"
                                 placeholder="Institution Of learning" >
@@ -60,9 +85,9 @@
                         </div>
                     </form>
 
-                    <div id="end">
+                    <!-- <div id="end">
                         <h1 id="tit" class="">hello</h1>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -72,10 +97,18 @@
                     
                     <p>
                         Are you a graduate and would like to apply for scholarships. Here is a list of scholarships you can apply. <br>
-                        Read More
+                        <a href="https://fully-fundedscholarships.com/"><input type="submit" value="Check Out" target="_blank"></a>
                     </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
-                        nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                    <p>Do you want to further your studies and increase emplyability skills! Here is a list of institution you can enroll into
+                        <span id="dots">...</span><span id="more">
+                             r fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+                             <ol class="list">
+                             <li>jkuat</li>
+                             <li>tuk</li>
+                             <li>ku</li>
+                            </ol>
+                            
+                            </span></p>
                     <button id="myBtn">Read less</button>    
                     <button id="myBt">Read more</button>    
                 </div>
