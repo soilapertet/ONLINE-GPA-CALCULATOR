@@ -7,7 +7,6 @@ body {
   height: 50%;
   display: flex;
   align-items: center;
-  /* justify-content:center; */
 }
 
 .form-input {
@@ -54,7 +53,6 @@ textarea {
   width: 70%;
   border: 1px solid orangered;
   border-radius: 8px;
-  /* box-sizing: border-box; */
   resize: vertical;
 }
 

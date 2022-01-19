@@ -55,10 +55,7 @@ $(document).ready(function () {
     $("#tit").show();
   });
 
-  // $(".btn").click(function(e) {
-  //   e.preventDefault();
-  //   document.getElementById("cForm").reset();
-  // })
+  
 
 
 });
