@@ -45,10 +45,6 @@ img
   right: 5px;
   transform: rotate(45deg);
 }
-button#calculate
-{
-  float: right;
-}
 button#add-semester
 {
   margin-top:10px;
@@ -137,15 +133,16 @@ button#remove-semester
 {
   display:none;
 }
-/* .rbc-label-start {
-  font-family: fontawesome;
-  font-weight: bold;
-  font-size: 30px;
+#display
+{
+  position:relative;
+  display:none;
 }
-.rbc-center-text {
-  font-family: 'Roboto', 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial;
-  fill: white;
+#display h2 
+{
+  position: absolute;
+  bottom: 19%;
+  left:33%;
+  color:#F6F9FE;
+  font-size: 40px;
 }
-.gpa .rbc-center-text-line0 {
-  font-size: 30px;
-} */
