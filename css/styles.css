@@ -2,13 +2,6 @@
 {
   scroll-behavior: smooth;
 }
-body
-{
-  background-image: url(../img/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
 h1
 {
   text-align:center;
@@ -18,7 +11,7 @@ img
   margin-left: 30%;
   max-width: 100%;
 }
-.close
+.remove
 {
   border-radius: 50%;
   padding: 0.5em;
@@ -28,7 +21,7 @@ img
   color: black;
   position: relative;
 }
-.close::before 
+.remove::before 
 {
   content: " ";
   position: absolute;
@@ -40,7 +33,7 @@ img
   bottom: 5px;
   transform: rotate(45deg);
 }
-.close::after 
+.remove::after 
 {
   content: " ";
   position: absolute;
@@ -52,42 +45,21 @@ img
   right: 5px;
   transform: rotate(45deg);
 }
-#add-course
+button#calculate
 {
-  border-radius: 50%;
-  padding: 0.5em;
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
-  color: black;
-  position: relative;
+  float: right;
 }
-#add-course::before
+button#add-semester
 {
-  content: " ";
-  position: absolute;
-  display: block;
-  background-color: black;
-  width: 2px;
-  left: 12px;
-  top: 5px;
-  bottom: 5px;
-  transform: rotate(90deg);
+  margin-top:10px;
+  margin-bottom:10px;
 }
-#add-course::after 
+button#remove-semester
 {
-  content: " ";
-  position: absolute;
-  display: block;
-  background-color: black;
-  height: 2px;
-  top:12px;
-  left: 5px;
-  right: 5px;
-  transform: rotate(90deg);
+  float:right;
+  margin-top: 5px;
 }
 .button-17 {
-  float:right;
   margin-right: 15px;
   align-items: center;
   appearance: none;
