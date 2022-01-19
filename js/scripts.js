@@ -1,5 +1,8 @@
 $(document).ready(function(){
-  
+  // Remove course after clicking close button
+  $(".remove").click(function(){
+    $(this).closest(".course-grade").hide();
+  })
   // Add semester section after clicking 'Add semester' button
   $("#add-semester").click(function(){
     $("#semesters").append(
@@ -183,5 +186,8 @@ $(document).ready(function(){
         '</div>'+
       '</div>'      
     );
+    $(".remove").click(function(){
+      $(this).closest(".course-grade").hide();
+    })
   });
 });
