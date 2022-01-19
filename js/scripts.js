@@ -2,6 +2,7 @@
 
 // Define/Initiate variables
 var courses = []; 
+var totalWeightedGPA, totalCredits,semesterGPA,cumultativeGPA;
 
 // Create a 'Course' constructor function
 function Course(course,credits,letterGrade){
@@ -14,6 +15,20 @@ function Course(course,credits,letterGrade){
 function addCourse(){
   courses.push(new Course());
 }
+// Create a function to calculate the Semester GPA
+function calculateSemesterGPA(){
+  var totalWeightedGPA = 0;
+  var totalCredits = 0;
+  
+  $(courses).each(function(){
+    totalWeightedGPA += this.courseCredits * this.courseGrade;
+    totalCredits += (this.courseCredits * 1);
+
+    var semesterGPA = (totalWeightedGPA / totalCredits).toFixed(2);
+    console.log(semesterGPA);
+  });
+  return semesterGPA;
+}
 
 $(document).ready(function(){
   // Remove course after clicking close button
@@ -22,9 +37,9 @@ $(document).ready(function(){
   })
   // Add semester section after clicking 'Add semester' button
   $("#add-semester").click(function(){
-    $("#semesters").append(
+    $(".new-semester").append(
       '<br>'+
-      '<div id="new-semester">'+
+      '<div class="new-semester">'+
         '<div class="card">'+
           '<div class="card-header">'+
             '<div class="row">'+
@@ -205,6 +220,20 @@ $(document).ready(function(){
     );
     $(".remove").click(function(){
       $(this).closest(".course").hide();
-    })
+    });
   });
+  $("#calculate").click(function(){
+    event.preventDefault();
+    $(".course").each(function(){
+      var inputtedCourseName = $(this).find("input#course-name").val();
+      var inputtedCourseCredit = parseFloat($(this).find("input#course-credits").val());
+      var selectedGradePoint = parseFloat($(this).find("select option:selected").val());
+      var inputtedCourse = new Course(inputtedCourseName,inputtedCourseCredit,selectedGradePoint);
+    
+      courses.push(inputtedCourse);
+    });
+    
+
+    calculateSemesterGPA();
+  })
 });
