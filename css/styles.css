@@ -141,3 +141,28 @@ h3, h2, h1{
   text-decoration: none;
   color: orangered;
 }
+.fab{
+  color: orangered;
+  font-size: 35px;
+  width: 50px;
+}
+.mail ul{
+  list-style: none;
+}
+footer .mail ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#sub{
+  border: none;
+  background-color: orangered;
+  color: #fff;
+  height: 35px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+#semail{
+  width: 70%;
+  height: 35px;
+}
