@@ -1,7 +1,17 @@
+// Business logic
+
+// Create a 'Course' constructor function
+function Course(course,credits,letterGrade){
+  this.courseName = course;
+  this.courseCredits = credits;
+  this.courseGrade = letterGrade;
+}
+
+
 $(document).ready(function(){
   // Remove course after clicking close button
   $(".remove").click(function(){
-    $(this).closest(".course-grade").hide();
+    $(this).closest(".course").hide();
   })
   // Add semester section after clicking 'Add semester' button
   $("#add-semester").click(function(){
@@ -19,7 +29,7 @@ $(document).ready(function(){
           '<div class="card-body">'+
             '<form action="calculate-gpa">'+
               '<div id="course-grades">'+
-                '<div class="course-grade" class="form-group">'+
+                '<div class="course" class="form-group">'+
                   '<div class="row">'+
                     '<div class="col-md-4">'+
                       '<input type="text" placeholder="Course Name" id="course-name" class="form-control" required>'+
@@ -51,7 +61,7 @@ $(document).ready(function(){
                   '</div>'+
                 '</div>'+
                 '<br>'+
-                '<div class="course-grade" class="form-group">'+
+                '<div class="course" class="form-group">'+
                   '<div class="row">'+
                     '<div class="col-md-4">'+
                       '<input type="text" placeholder="Course Name" id="course-name" class="form-control" required>'+
@@ -83,7 +93,7 @@ $(document).ready(function(){
                   '</div>'+
                 '</div>'+
                 '<br>'+
-                '<div class="course-grade" class="form-group">'+
+                '<div class="course" class="form-group">'+
                   '<div class="row">'+
                     '<div class="col-md-4">'+
                       '<input type="text" placeholder="Course Name" id="course-name" class="form-control" required>'+
@@ -115,7 +125,7 @@ $(document).ready(function(){
                   '</div>'+
                 '</div>'+
                 '<br>'+
-                '<div class="course-grade" class="form-group">'+
+                '<div class="course" class="form-group">'+
                   '<div class="row">'+
                     '<div class="col-md-4">'+
                       '<input type="text" placeholder="Course Name" id="course-name" class="form-control" required>'+
@@ -147,7 +157,7 @@ $(document).ready(function(){
                   '</div>'+
                 '</div>'+
                 '<br>'+
-                '<div class="course-grade" class="form-group">'+
+                '<div class="course" class="form-group">'+
                   '<div class="row">'+
                     '<div class="col-md-4">'+
                       '<input type="text" placeholder="Course Name" id="course-name" class="form-control" required>'+
@@ -187,7 +197,7 @@ $(document).ready(function(){
       '</div>'      
     );
     $(".remove").click(function(){
-      $(this).closest(".course-grade").hide();
+      $(this).closest(".course").hide();
     })
   });
 });
