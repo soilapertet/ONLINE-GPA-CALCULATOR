@@ -131,3 +131,15 @@ h3, h2, h1{
   font-style: italic;
   border-radius: 5px;
 }
+#back{
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  text-align: right;
+}
+.site{
+  text-decoration: none;
+  color: orangered;
+}
