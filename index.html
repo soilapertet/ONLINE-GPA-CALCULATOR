@@ -29,7 +29,7 @@
             </div>
             <div class="center col-sm m-3 p-3">
                 <div id="seeProfile">
-                    <h1 id="tit" class="">Here is your updated profile information</h1>
+                    <h3 id="tit" class="">Here is your updated profile information</h3>
                     <p id="upName"></p>
                     <p id="upPhone"></p>
                     <p id="uplevel"></p>
@@ -52,7 +52,7 @@
 
         <div class="container text-center-5 yp">
             <div class="row">
-                <div class="col-sm mb-5 pb-5">
+                <div class="col-sm mb-3 pb-3">
                     <!-- <div class="center m-3 p-3 py-0 my-0 ">
                         <div class="form-input">
                             <div class="preview">
@@ -65,7 +65,7 @@
                     <form id="myForm" name="myForm" action ="" class="form-control p-5 proff" onsubmit="validateForm()" >
                         <div class="form-group container">
                             <p>Update Your Personal Information Here</p>
-                            <input type="text" id="name" class="form-control mb-3 name" placeholder="Full Name" > 
+                            <input type="text" id="name" class="form-control mb-3 name" placeholder="Full Name" required> 
                             <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number" > 
                             <select class="form-select mb-3" id="level" >
                                 <option value="">Select your highest level of learning</option>
@@ -85,27 +85,30 @@
                         </div>
                     </form>
 
-                    <!-- <div id="end">
-                        <h1 id="tit" class="">hello</h1>
-                    </div> -->
+
 
                 </div>
 
                 <div class="col-sm text-dark">
                     <h3>Notices</h3>
-                    <p>Are you a graduate and would like to apply for jobs. <a href="">Click here</a>  to check some of the available opportunities.</p>
+                    <p>Are you in doubt of your GPA score! Are you in a dillemma of not graduating? Would you like to 
+                        calculate it? <br> <a href="" id="calculate">Calculate It here</a>
+                    </p>
+                    <p>Are you a graduate and would like to apply for jobs. 
+                        <a href="https://www.myjobmag.co.ke/" id="clic">Click here</a>  to check some of the available opportunities.</p>
                     
                     <p>
                         Are you a graduate and would like to apply for scholarships. Here is a list of scholarships you can apply. <br>
-                        <a href="https://fully-fundedscholarships.com/"><input type="submit" value="Check Out" target="_blank"></a>
+                        <a href="https://fully-fundedscholarships.com/" target="_blank"><input type="submit" id="check" value="Check Out"></a>
                     </p>
                     <p>Do you want to further your studies and increase emplyability skills! Here is a list of institution you can enroll into
-                        <span id="dots">...</span><span id="more">
-                             r fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-                             <ol class="list">
-                             <li>jkuat</li>
-                             <li>tuk</li>
-                             <li>ku</li>
+                        <span id="dots">...</span><span id="more"> both local and international
+                            <ol class="list">
+                             <li>Moringa School for Software Development skills</li>
+                             <li>Kenya Institute of professional Studies for Proffessional Studies</li>
+                             <li>Kenya Institute of Management for Managerial Skills</li>
+                             <li></li>
+                             <li></li>
                             </ol>
                             
                             </span></p>
@@ -120,18 +123,17 @@
 
     </div>
 
-    <div class="container text-center  m-5 p-5">
+    <div class="container text-center m-3 pb-3">
         <h2>Contact Us</h2>
         <div class="container">
-            <form action="">
+            <form action="https://formspree.io/f/mvolzbgr" method="POST" id="cForm">
                 <label for="uname" >Your Name</label> <br>
-                <input type="text" id="uname"class="p-2"  placeholder="Input Your Name"> <br>
+                <input type="text" id="uname"class="p-2" name="uname"  placeholder="Input Your Name" required> <br>
                 <label for="email">Your Name Address</label> <br>
-                <input type="text" id="email" class="p-2" placeholder="Input Your Email Address"> <br>
+                <input type="text" id="email" name="email" class="p-2" placeholder="Input Your Email Address" required> <br>
                 <label for="message">Message</label> <br>
                 <textarea id="message" name="message" class="p-3" placeholder="Write Message.." style="height:200px"></textarea> <br>
-
-                <input type="submit" id="smessage" class="btn p-1"value="Send Message">
+                <input type="submit" id="smessage" name="smessage" class="btn p-1"value="Send Message" required>
             </form>
         </div>
 
