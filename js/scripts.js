@@ -1,5 +1,8 @@
 // Business logic
 
+// Define/Initiate variables
+var courses = []; 
+
 // Create a 'Course' constructor function
 function Course(course,credits,letterGrade){
   this.courseName = course;
@@ -7,6 +10,10 @@ function Course(course,credits,letterGrade){
   this.courseGrade = letterGrade;
 }
 
+// Create a function to push course objects to the initialised empty array
+function addCourse(){
+  courses.push(new Course());
+}
 
 $(document).ready(function(){
   // Remove course after clicking close button
@@ -42,15 +49,15 @@ $(document).ready(function(){
                         '<option value="" hidden required>Letter Grade</option>'+
                         '<option value="4.0">A+</option>'+
                         '<option value="4.0">A</option>'+
-                        '<option value="3.7">B+</option>'+
-                        '<option value="3.3">B</option>'+
+                        '<option value="3.7">A-</option>'+
+                        '<option value="3.3">B+</option>'+
                         '<option value="3.0">B-</option>'+
-                        '<option value="2.7">C+</option>'+
-                        '<option value="2.3">C</option>'+
-                        '<option value="2.0">C-</option>'+
-                        '<option value="1.7">D+</option>'+
-                        '<option value="1.3">D</option>'+
-                        '<option value="1.0">D-</option>'+
+                        '<option value="2.7">B-</option>'+
+                        '<option value="2.3">C+</option>'+
+                        '<option value="2.0">C</option>'+
+                        '<option value="1.7">C-</option>'+
+                        '<option value="1.3">D+</option>'+
+                        '<option value="1.0">D</option>'+
                         '<option value="0.0">F</option>'+
                      ' </select>'+
                     '</div>'+
@@ -74,15 +81,15 @@ $(document).ready(function(){
                         '<option value="" hidden required>Letter Grade</option>'+
                         '<option value="4.0">A+</option>'+
                         '<option value="4.0">A</option>'+
-                        '<option value="3.7">B+</option>'+
-                        '<option value="3.3">B</option>'+
+                        '<option value="3.7">A-</option>'+
+                        '<option value="3.3">B+</option>'+
                         '<option value="3.0">B-</option>'+
-                        '<option value="2.7">C+</option>'+
-                        '<option value="2.3">C</option>'+
-                        '<option value="2.0">C-</option>'+
-                        '<option value="1.7">D+</option>'+
-                        '<option value="1.3">D</option>'+
-                        '<option value="1.0">D-</option>'+
+                        '<option value="2.7">B-</option>'+
+                        '<option value="2.3">C+</option>'+
+                        '<option value="2.0">C</option>'+
+                        '<option value="1.7">C-</option>'+
+                        '<option value="1.3">D+</option>'+
+                        '<option value="1.0">D</option>'+
                         '<option value="0.0">F</option>'+
                      ' </select>'+
                     '</div>'+
@@ -106,15 +113,15 @@ $(document).ready(function(){
                         '<option value="" hidden required>Letter Grade</option>'+
                         '<option value="4.0">A+</option>'+
                         '<option value="4.0">A</option>'+
-                        '<option value="3.7">B+</option>'+
-                        '<option value="3.3">B</option>'+
+                        '<option value="3.7">A-</option>'+
+                        '<option value="3.3">B+</option>'+
                         '<option value="3.0">B-</option>'+
-                        '<option value="2.7">C+</option>'+
-                        '<option value="2.3">C</option>'+
-                        '<option value="2.0">C-</option>'+
-                        '<option value="1.7">D+</option>'+
-                        '<option value="1.3">D</option>'+
-                        '<option value="1.0">D-</option>'+
+                        '<option value="2.7">B-</option>'+
+                        '<option value="2.3">C+</option>'+
+                        '<option value="2.0">C</option>'+
+                        '<option value="1.7">C-</option>'+
+                        '<option value="1.3">D+</option>'+
+                        '<option value="1.0">D</option>'+
                         '<option value="0.0">F</option>'+
                      ' </select>'+
                     '</div>'+
@@ -138,15 +145,15 @@ $(document).ready(function(){
                         '<option value="" hidden required>Letter Grade</option>'+
                         '<option value="4.0">A+</option>'+
                         '<option value="4.0">A</option>'+
-                        '<option value="3.7">B+</option>'+
-                        '<option value="3.3">B</option>'+
+                        '<option value="3.7">A-</option>'+
+                        '<option value="3.3">B+</option>'+
                         '<option value="3.0">B-</option>'+
-                        '<option value="2.7">C+</option>'+
-                        '<option value="2.3">C</option>'+
-                        '<option value="2.0">C-</option>'+
-                        '<option value="1.7">D+</option>'+
-                        '<option value="1.3">D</option>'+
-                        '<option value="1.0">D-</option>'+
+                        '<option value="2.7">B-</option>'+
+                        '<option value="2.3">C+</option>'+
+                        '<option value="2.0">C</option>'+
+                        '<option value="1.7">C-</option>'+
+                        '<option value="1.3">D+</option>'+
+                        '<option value="1.0">D</option>'+
                         '<option value="0.0">F</option>'+
                      ' </select>'+
                     '</div>'+
@@ -170,15 +177,15 @@ $(document).ready(function(){
                         '<option value="" hidden required>Letter Grade</option>'+
                         '<option value="4.0">A+</option>'+
                         '<option value="4.0">A</option>'+
-                        '<option value="3.7">B+</option>'+
-                        '<option value="3.3">B</option>'+
+                        '<option value="3.7">A-</option>'+
+                        '<option value="3.3">B+</option>'+
                         '<option value="3.0">B-</option>'+
-                        '<option value="2.7">C+</option>'+
-                        '<option value="2.3">C</option>'+
-                        '<option value="2.0">C-</option>'+
-                        '<option value="1.7">D+</option>'+
-                        '<option value="1.3">D</option>'+
-                        '<option value="1.0">D-</option>'+
+                        '<option value="2.7">B-</option>'+
+                        '<option value="2.3">C+</option>'+
+                        '<option value="2.0">C</option>'+
+                        '<option value="1.7">C-</option>'+
+                        '<option value="1.3">D+</option>'+
+                        '<option value="1.0">D</option>'+
                         '<option value="0.0">F</option>'+
                      ' </select>'+
                     '</div>'+
