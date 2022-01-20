@@ -22,15 +22,15 @@ html {
 a 
 {
   font-size: 22px;
-  color: #777;
+  color: white;
   text-decoration: none;
   transition: all 0.45s;
 }
 a:hover
 {
-  color: white;
+  color:orangered;
   padding-bottom: 10px;
-  border-bottom:3px solid white;
+  border-bottom: 3px solid orangered;
 }
 a:not(:last-child) {
   margin-right: 30px;
