@@ -62,6 +62,48 @@ $(document).ready(function () {
     $("#tit").show();
   });
 
+  $(".register").click(function(e) {
+    e.preventDefault();
+
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var pass = $("#pass").val();
+    var cpass = $("#cpass").val();
+    if (name == "") {
+      alert("Please enter a Username")
+    }else if (email == "") {
+      alert("Please enter email")
+    }else if (pass == "") {
+      alert("Please enter pass")
+    }else if (cpass == "") {
+      alert("PConfirm Password")
+    }else{
+      alert("Registered Successfully")
+      window.location = "profile.html"; 
+    }
+  });
+
+  $("#signin").click(function(e) {
+    var name = $(".name").val();
+    var pas = $("#pas").val();
+    if(name == ""){
+      alert("Please enter your Username")
+    }else if (pas == ""){
+      alert("Enter your Password")
+    }else{
+      alert("Login Successful")
+      window.location = "profile.html"; 
+    }
+  })
+  $(".help").click(function(e){
+    $(".sign").show();
+    $(".login").hide();
+    $(".h-tag").hide();
+    $(".help").hide();
+
+
+  })
+
   
 
 

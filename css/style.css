@@ -3,6 +3,56 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#main {
+  text-align: center;
+  width: 600px;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-top: 100px;
+  border-top: 3px double #f1f1f1;
+  border-bottom: 3px double #f1f1f1;
+  padding-top: 20px;
+}
+
+#main input[type=submit]{
+  width: 120px;
+  height: 32px;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: orangered;
+  transition: 1s;
+}
+.sign{
+  display: none;
+}
+.help{
+  color: orangered;
+}
+
+
+#main input[type=submit]:hover {
+  background-color: transparent;
+  outline: none;
+  border-radius: 12px;
+  color: white;
+  transition: 1s;
+}
+#main input{
+  height: 35px;
+  width: 355px;
+  border-radius: 12px;
+}
+
 .menu{ 
   list-style : none;
   float: right;
