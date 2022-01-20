@@ -35,24 +35,24 @@ function calculateCumulativeGPA(){
 
   if(requiredGPA < cumulativeGPA)
   {
-    var displayMessage = "Your Cumulative GPA is above the required GPA!"+
-                         "Your chances of graduating/progressing to the next year are HIGH!!!!"+
+    var displayMessage = "Your Cumulative GPA is above the required GPA! "+
+                         "Your chances of graduating/progressing to the next year are high."+
                          " Keep it up!!";
   }
   else if (requiredGPA === cumulativeGPA)
   {
     var displayMessage = "Your Cumulative GPA is equal to the required GPA! "+
-                         "You HAVE A CHANCE of graduating/progressing to the next year!!!"+
-                         "There's always room for improvement!"+
-                         "Let's put in threefold the effort and surpass the required GPA!!!!!";
+                         "You have a chance of graduating/progressing to the next year. "+
+                         "There's always room for improvement! "+
+                         "Let's put in threefold the effort and surpass the required GPA!";
                          
   }
   else if(requiredGPA > cumulativeGPA)
   {
     var displayMessage = "Your Cumulative GPA is below the required GPA! "+
-                         "Your chances of graduating/progressing to the next year are LOW!!!!"+
-                         "Let's leave nothing to chance!!!"+
-                         "Let's get up and running and increase that GPA!!!!!";
+                         "Your chances of graduating/progressing to the next year are low."+
+                         " Let's leave nothing to chance!"+
+                         " Let's get up and running and increase that GPA!";
   }
   else 
   {
@@ -68,18 +68,7 @@ function calculateCumulativeGPA(){
 // User Interface Logic
 
 $(document).ready(function(){
-  // Remove course after clicking close button
-  $(".remove").click(function(){
-    $(this).closest(".course").hide();
-  })
 
-  // Reset entry fields
-  $("#add-semester").click(function(){
-
-    $("input#semester-name").val("");
-    $("#gpaForm")[0].reset();
-
-  });
   $("#add-course").click(function(){
     $("#course-grades").append(
       '<br>'+
@@ -112,17 +101,12 @@ $(document).ready(function(){
       '</div>'
     );
   });
-
-  $("#calculate-gpa").click(function(){
-
-    const inpObj = document.getElementById("gpaForm");
-    if (!inpObj.checkValidity()) 
-    {
-      document.getElementById("course-name").innerHTML = inpObj.validationMessage;
-    }
+  
+  $("#gpaForm").submit(function(){
 
     event.preventDefault();
-    
+
+    $("#gpa-history").show();
     $(".new-semester").each(function(){
       
       $(".course").each(function(){
@@ -139,7 +123,14 @@ $(document).ready(function(){
 
     });
 
-    // calculateCumulativeGPA();
+  });
+
+  // Reset entry fields
+  $("#add-semester").click(function(){
+
+    $("#gpa-history").hide();
+    $("input#semester-name").val("");
+    $("#gpaForm")[0].reset();
 
   });
 });
