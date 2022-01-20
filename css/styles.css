@@ -11,7 +11,7 @@ img
   margin-left: 30%;
   max-width: 100%;
 }
-.remove
+.add
 {
   border-radius: 50%;
   padding: 0.5em;
@@ -21,7 +21,7 @@ img
   color: black;
   position: relative;
 }
-.remove::before 
+.add::before 
 {
   content: " ";
   position: absolute;
@@ -31,9 +31,9 @@ img
   left: 12px;
   top: 5px;
   bottom: 5px;
-  transform: rotate(45deg);
+  transform: rotate(90deg);
 }
-.remove::after 
+.add::after 
 {
   content: " ";
   position: absolute;
@@ -43,19 +43,10 @@ img
   top:12px;
   left: 5px;
   right: 5px;
-  transform: rotate(45deg);
-}
-button#add-semester
-{
-  margin-top:10px;
-  margin-bottom:10px;
-}
-button#remove-semester
-{
-  float:right;
-  margin-top: 5px;
+  transform: rotate(90deg);
 }
 .button-17 {
+  float:right;
   margin-right: 15px;
   align-items: center;
   appearance: none;
@@ -129,10 +120,10 @@ button#remove-semester
   text-align:center;
   margin-top:10px;
 }
-#gpa-history
+/* #gpa-history
 {
   display:none;
-}
+} */
 #display
 {
   position:relative;

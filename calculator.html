@@ -52,24 +52,24 @@
               <div class="card-header">
                 <div class="row">
                   <div class="col-md-12">
-                    <h2><input class="border" type="text" placeholder="Semester e.g Fall 2021"></h2>
+                    <h2><input class="border" id="semester-name" type="text" placeholder="Semester e.g Fall 2021" required></h2>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <form action="calculate-gpa">
+                <form id="gpaForm" action="calculate-gpa">
                   <div id="course-grades">
                     <div class="course" class="form-group">
                       <div class="row">
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Name" id="course-name" class="form-control">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required>
                         </div>
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required>
                         </div>
                         <div class="col-md-2">
                           <select name="letter-grade" id="letter-grade" class="form-select" required>
-                            <option value="" hidden>Letter Grade</option>
+                            <option value="">Letter Grade</option>
                             <option value="4.0">A+</option>
                             <option value="4.0">A</option>
                             <option value="3.7">A-</option>
@@ -84,24 +84,20 @@
                             <option value="0.0">F</option>
                           </select>
                         </div>
-                        <div class="col-md-2">
-                          <button type="button" class="remove" id="remove-course" aria-label="Remove Course">
-                          </button>
-                        </div>
                       </div>
                     </div>
                     <br>
                     <div class="course" class="form-group">
                       <div class="row">
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Name" id="course-name" class="form-control">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required>
                         </div>
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required>
                         </div>
                         <div class="col-md-2">
                           <select name="letter-grade" id="letter-grade" class="form-select" required>
-                            <option value="" hidden>Letter Grade</option>
+                            <option value="">Letter Grade</option>
                             <option value="4.0">A+</option>
                             <option value="4.0">A</option>
                             <option value="3.7">A-</option>
@@ -116,24 +112,20 @@
                             <option value="0.0">F</option>
                           </select>
                         </div>
-                        <div class="col-md-2">
-                          <button type="button" class="remove" id="remove-course" aria-label="Remove Course">
-                          </button>
-                        </div>
                       </div>
                     </div>
                     <br>
                     <div class="course" class="form-group">
                       <div class="row">
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Name" id="course-name" class="form-control">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required>
                         </div>
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required>
                         </div>
                         <div class="col-md-2">
                           <select name="letter-grade" id="letter-grade" class="form-select" required>
-                            <option value="" hidden>Letter Grade</option>
+                            <option value="">Letter Grade</option>
                             <option value="4.0">A+</option>
                             <option value="4.0">A</option>
                             <option value="3.7">A-</option>
@@ -148,84 +140,19 @@
                             <option value="0.0">F</option>
                           </select>
                         </div>
-                        <div class="col-md-2">
-                          <button type="button" class="remove" id="remove-course" aria-label="Remove Course">
-                          </button>
-                        </div>
                       </div>
                     </div>
-                    <br>
-                    <div class="course" class="form-group">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Name" id="course-name" class="form-control">
-                        </div>
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control">
-                        </div>
-                        <div class="col-md-2">
-                          <select name="letter-grade" id="letter-grade" class="form-select" required>
-                            <option value="" hidden>Letter Grade</option>
-                            <option value="4.0">A+</option>
-                            <option value="4.0">A</option>
-                            <option value="3.7">A-</option>
-                            <option value="3.3">B+</option>
-                            <option value="3.0">B</option>
-                            <option value="2.7">B-</option>
-                            <option value="2.3">C+</option>
-                            <option value="2.0">C</option>
-                            <option value="1.7">C-</option>
-                            <option value="1.3">D+</option>
-                            <option value="1.0">D</option>
-                            <option value="0.0">F</option>
-                          </select>
-                        </div>
-                        <div class="col-md-2">
-                          <button type="button" class="remove" id="remove-course" aria-label="Remove Course">
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="course" class="form-group">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Name" id="course-name" class="form-control">
-                        </div>
-                        <div class="col-md-4">
-                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control">
-                        </div>
-                        <div class="col-md-2">
-                          <select name="letter-grade" id="letter-grade" class="form-select" required>
-                            <option value="" hidden>Letter Grade</option>
-                            <<option value="4.0">A+</option>
-                            <option value="4.0">A</option>
-                            <option value="3.7">A-</option>
-                            <option value="3.3">B+</option>
-                            <option value="3.0">B</option>
-                            <option value="2.7">B-</option>
-                            <option value="2.3">C+</option>
-                            <option value="2.0">C</option>
-                            <option value="1.7">C-</option>
-                            <option value="1.3">D+</option>
-                            <option value="1.0">D</option>
-                            <option value="0.0">F</option>
-                          </select>
-                        </div>
-                        <div class="col-md-2">
-                          <button type="button" class="remove" id="remove-course" aria-label="Remove Course">
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
                   <br>
+                  <button type="button" class="add" id="add-course" aria-label="Add Course">
+                  </button>
+                  <br>
+                  <button type="submit" class="button-17" id="calculate-gpa">Calculate GPA</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <button class="button-17" id="calculate">Calculate GPA</button>
-        <button class="button-17" id="add-semester">Add Semester</button>
     <div id="display">
       <img src="img/gpa_background.jpg" alt="Image of shape">
       <div id="gpa-result">
@@ -235,19 +162,23 @@
 
       </div>
     </div>
+    <br>
     <div id="gpa-history">
       <h1>GPA LOG</h1>
+      <h3>Track your progress!!</h3>
       <table class="table">
         <thead>
           <tr>
             <th scope="col">Semester</th>
-            <th scope="col">GPA</th>
+            <th scope="col">Cumultative GPA</th>
           </tr>
         </thead>
-        <tbody id="semester-gpa">
+        <tbody id="cumultative-gpa">
           
         </tbody>
       </table>
+      <br>
+      <button class="button-17" id="add-semester">Add Semester</button>
     </div>
   </div>
 </body>
