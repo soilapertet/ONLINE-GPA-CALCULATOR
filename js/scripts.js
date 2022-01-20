@@ -4,7 +4,7 @@
 var courses = []; 
 var courseGradePoints= [];
 var credits = [];
-var totalWeightedGPA, totalCredits,semesterGPA,cumultativeGPA,gradePointsEarned,creditsEarned;
+var totalWeightedGPA, totalCredits,semesterGPA,cumultativeGPA,gradePointsEarned,creditsEarned,requiredGPA;
 
 // Create a 'Course' constructor function
 function Course(course,credits,letterGrade){
@@ -60,8 +60,36 @@ function calculateCumultativeGPA(){
   console.log(cumultativeGPA);
 
   var inputtedSemesterName = $("input#semester-name").val();
+  var requiredGPA = parseFloat($("input#required-gpa").val());
 
-  var row = "<tr><th id='semester-name'>"+inputtedSemesterName+"</th><th id='current-cumualative-gpa'>"+cumultativeGPA+"</th></tr>";
+  if(requiredGPA < cumultativeGPA)
+  {
+    var displayMessage = "Your Cumulatative GPA is above the required GPA!"+
+                         "Your chances of graduating/progressing to the next year are HIGH!!!!"+
+                         " Keep it up!!";
+  }
+  else if (requiredGPA === cumultativeGPA)
+  {
+    var displayMessage = "Your Cumulatative GPA is equal to the required GPA! "+
+                         "You HAVE A CHANCE of graduating/progressing to the next year!!!"+
+                         "There's always room for improvement!"+
+                         "Let's put in threefold the effort and surpass the required GPA!!!!!";
+                         
+  }
+  else if(requiredGPA > cumultativeGPA)
+  {
+    var displayMessage = "Your Cumulatative GPA is below required GPA! "+
+                         "Your chances of graduating/progressing to the next year are LOW!!!!"+
+                         "Let's leave nothing to chance!!!"+
+                         "Let's get up and running and increase that GPA!!!!!";
+  }
+  else 
+  {
+    return false;
+  }
+  
+  var row = "<tr><th id='semester-name'>"+inputtedSemesterName+"</th><th id='current-cumualative-gpa'>"+cumultativeGPA+
+            "</th><th id='display-message'>"+displayMessage+"</th></tr>";
     $("tbody#cumultative-gpa").append(row);
   // return cumultativeGPA;
 }
