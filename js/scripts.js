@@ -2,8 +2,6 @@
 
 // Define/Initiate variables
 var courses = []; 
-var courseGradePoints= [];
-var credits = [];
 var totalWeightedGPA, totalCredits,semesterGPA,cumulativeGPA,gradePointsEarned,creditsEarned,requiredGPA;
 
 // Create a 'Course' constructor function
@@ -18,45 +16,18 @@ function addCourse(){
   courses.push(new Course());
 }
 // Create a function to calculate the Semester GPA
-function calculateSemesterGPA(){
+function calculateCumulativeGPA(){
   var totalWeightedGPA = 0;
   var totalCredits = 0;
   
   $(courses).each(function(){
+
     totalWeightedGPA += (this.courseCredits * this.courseGrade) * 1 ;
     totalCredits += (this.courseCredits * 1);
 
-    var semesterGPA = parseFloat((totalWeightedGPA / totalCredits).toFixed(2));
-    console.log(semesterGPA);
-
   });
 
-  courseGradePoints.push(totalWeightedGPA);
-  console.log(courseGradePoints);
-  credits.push(totalCredits);
-  console.log(credits);
-  // return semesterGPA;
-
-}
-
-// Create a function to calculate Cumulative GPA
-function calculateCumulativeGPA(){
-
-  var gradePointsEarned = 0;
-
-  for(i=0;i < courseGradePoints.length;i++) {
-    gradePointsEarned += courseGradePoints[i];
-    console.log(gradePointsEarned);
-  }
-
-  var creditsEarned = 0;
-
-  for(i=0;i < credits.length;i++) {
-    creditsEarned += credits[i];
-    console.log(creditsEarned);
-  }
-
-  var cumulativeGPA = parseFloat((gradePointsEarned / creditsEarned).toFixed(2));
+  var cumulativeGPA = parseFloat((totalWeightedGPA / totalCredits).toFixed(2));
   console.log(cumulativeGPA);
 
   var inputtedSemesterName = $("input#semester-name").val();
@@ -78,7 +49,7 @@ function calculateCumulativeGPA(){
   }
   else if(requiredGPA > cumulativeGPA)
   {
-    var displayMessage = "Your Cumulative GPA is below required GPA! "+
+    var displayMessage = "Your Cumulative GPA is below the required GPA! "+
                          "Your chances of graduating/progressing to the next year are LOW!!!!"+
                          "Let's leave nothing to chance!!!"+
                          "Let's get up and running and increase that GPA!!!!!";
@@ -91,24 +62,16 @@ function calculateCumulativeGPA(){
   var row = "<tr><th id='semester-name'>"+inputtedSemesterName+"</th><th id='current-cumualative-gpa'>"+cumulativeGPA+
             "</th><th id='display-message'>"+displayMessage+"</th></tr>";
     $("tbody#cumulative-gpa").append(row);
-  // return cumulativeGPA;
+
 }
+
+// User Interface Logic
 
 $(document).ready(function(){
   // Remove course after clicking close button
   $(".remove").click(function(){
     $(this).closest(".course").hide();
   })
-  // Add semester section after clicking 'Add semester' button
-  $("#add-semester").click(function(){
-  
-    $(".remove").click(function(){
-      $(this).closest(".course").hide();
-    });
-
-    calculateSemesterGPA();
-
-  });
 
   // Reset entry fields
   $("#add-semester").click(function(){
@@ -171,12 +134,12 @@ $(document).ready(function(){
         courses.push(inputtedCourse);
   
       });
-  
-      calculateSemesterGPA();
+
+      calculateCumulativeGPA();
 
     });
 
-    calculateCumulativeGPA();
+    // calculateCumulativeGPA();
 
   });
 });
