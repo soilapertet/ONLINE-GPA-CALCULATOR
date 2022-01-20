@@ -3,6 +3,33 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.menu{ 
+  list-style : none;
+  float: right;
+  margin-top : 10px;
+}
+ .menu li {
+  margin-right:20px;
+  display:inline;
+  float:right;
+}
+
+nav a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.45s;
+  float:right;
+}
+nav a:hover {
+  color:orangered;
+  padding-bottom: 10px;
+  border-bottom: 3px solid orangered
+}
+nav a:not(:last-child) {
+  margin-right: 30px;
+}
+
 .center {
   height: 50%;
   display: flex;
