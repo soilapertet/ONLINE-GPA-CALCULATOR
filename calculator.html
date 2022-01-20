@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Online GPA Calculator</title>
+</head>
+<body>
+  <header>
+    <nav class="bg-dark p-2">
+      <img src="img/logo.jpg" alt="Image of logo" srcset="" height="60px" width="">
+      <h3 style="display:inline;font-weight:bold;">GPA FINDER</h3>
+      <ul class="menu">
+        <li><a href="sites.html">Study Sites</a></li>
+        <li><a href="calculator.html">GPA Calculator</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="about">
+    <p>
+      Keeping track of one's GPA throughout the semester is quite tedious. Furthermore, with 
+      graduation dates (for upper-years) and completion dates of your academic year (lower years) 
+      approaching, it becomes necessary to know one's Cumulative GPA to determine where they stand 
+      in terms of graduating or progressing to the upcoming year.
+    </p>
+    <p>
+      Thanks to our Online GPA calculator, one can keep track of their GPA over the semester and throughout
+      years, rendering any worries that may occur useless.The web tool also displays your chances of graduating or 
+      progressing to the next year.
+    </p>
+  </div>
+  <div class="container">
+    <div id="gpa-section">
+      <form id="gpaForm" action="calculate-gpa">
+        <div id="semesters">
+          <div class="new-semester">
+            <div class="card">
+              <div class="card-header"> 
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>GPA CALCULATOR</h1>
+                    <h2>
+                      <input class="form-control" id="semester-name" type="text" placeholder="Enter Semester here e.g Fall 2021 or Semester 1" required="true">
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                  <div id="course-grades">
+                    <div class="course" class="form-group">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required/>
+                        </div>
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required/>
+                        </div>
+                        <div class="col-md-2">
+                          <select name="letter-grade" id="letter-grade" class="form-select" required="true">
+                            <option value="">Letter Grade</option>
+                            <option value="4.0">A+</option>
+                            <option value="4.0">A</option>
+                            <option value="3.7">A-</option>
+                            <option value="3.3">B+</option>
+                            <option value="3.0">B</option>
+                            <option value="2.7">B-</option>
+                            <option value="2.3">C+</option>
+                            <option value="2.0">C</option>
+                            <option value="1.7">C-</option>
+                            <option value="1.3">D+</option>
+                            <option value="1.0">D</option>
+                            <option value="0.0">F</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="course" class="form-group">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required/>
+                        </div>
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required/>
+                        </div>
+                        <div class="col-md-2">
+                          <select name="letter-grade" id="letter-grade" class="form-select" required="true">
+                            <option value="">Letter Grade</option>
+                            <option value="4.0">A+</option>
+                            <option value="4.0">A</option>
+                            <option value="3.7">A-</option>
+                            <option value="3.3">B+</option>
+                            <option value="3.0">B</option>
+                            <option value="2.7">B-</option>
+                            <option value="2.3">C+</option>
+                            <option value="2.0">C</option>
+                            <option value="1.7">C-</option>
+                            <option value="1.3">D+</option>
+                            <option value="1.0">D</option>
+                            <option value="0.0">F</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="course" class="form-group">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required/>
+                        </div>
+                        <div class="col-md-5">
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required/>
+                        </div>
+                        <div class="col-md-2">
+                          <select name="letter-grade" id="letter-grade" class="form-select" required="true">
+                            <option value="">Letter Grade</option>
+                            <option value="4.0">A+</option>
+                            <option value="4.0">A</option>
+                            <option value="3.7">A-</option>
+                            <option value="3.3">B+</option>
+                            <option value="3.0">B</option>
+                            <option value="2.7">B-</option>
+                            <option value="2.3">C+</option>
+                            <option value="2.0">C</option>
+                            <option value="1.7">C-</option>
+                            <option value="1.3">D+</option>
+                            <option value="1.0">D</option>
+                            <option value="0.0">F</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <button type="button" class="add" id="add-course" aria-label="Add Course">
+                  </button>
+                  <br>
+                  <button type="submit" class="button-17" id="calculate-gpa">Calculate GPA</button>
+              </div>
+              <div class="card-footer">
+                <h3><input class="border form-control" id="required-gpa" type="text" placeholder="Enter required GPA to graduate/progress to next year..." required="true"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <br>
+      <br>
+      <div id="gpa-history">
+        <div class="card">
+          <div class="card-header">
+            <h1>GPA LOG</h1>
+          </div>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Semester</th>
+                  <th scope="col">Cumulative GPA</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody id="cumulative-gpa">
+                
+              </tbody>
+            </table>
+            <br>
+          </div>
+          <div class="card-footer">
+            <button class="button-17" id="add-semester">Add Semester</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark p-5 mt-3">
+    <div class="container row">
+      <div class="col-sm-6 news">
+        <h3>Subscribe to our Newsletter to stay to date with the upcoming notices</h3>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          <input type="text" name="email" id="semail" placeholder="Enter your email">
+        </form>
+        <input type="submit" id="sub" value="Subscribe">
+      </div>
+      <div class="col-sm-6">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="sites.html">Study Sites</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center py-2">
+      <h3>Copyright & copy 2021</h3>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-youtube-square"></i>
+    </div>
+  </footer>
+</body>
+</html>
