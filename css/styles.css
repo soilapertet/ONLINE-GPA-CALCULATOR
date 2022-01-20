@@ -162,6 +162,9 @@ footer .mail ul li a {
   border-radius: 5px;
   margin-top: 15px;
 }
+#residence{
+  display: none;
+}
 #semail{
   width: 70%;
   height: 35px;

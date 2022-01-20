@@ -26,6 +26,8 @@ $(document).ready(function () {
     $("#myBtn").hide();
     $(".list").hide();
   });
+ 
+
   $("#save").click(function (e) {
     e.preventDefault();
     var name = $('#name').val();
@@ -33,6 +35,7 @@ $(document).ready(function () {
     var level = $('#level').val();
     var institute = $('#institute').val();
     var experience = $('#experience').val();
+    var residence = $('#residence').val();
     if (name == "") {
       alert("please Enter your name");
     } else if (phone == "") {
@@ -42,13 +45,17 @@ $(document).ready(function () {
       alert("Please select your Level");
     } else if (institute == "") {
       alert("Please enter your institute"); 
-    } else {
+    }else if (residence == "") {
+      console.log("Please enter your residence"); 
+    }
+     else {
       return true;
     };
     $("#upName").html("Your Name:   " + name);
     $("#upPhone").html("Your Phone: " + phone);
     $("#uplevel").html("Study Level: " + level);
     $("#inst").html(" Institutution:" + institute);
+    // $("#red").html("reside");
     $("#exp").html(" Experience:" + experience);
     document.getElementById("myForm").reset();
     $(".pic").hide();
