@@ -61,7 +61,7 @@ function calculateCumultativeGPA(){
 
   var inputtedSemesterName = $("input#semester-name").val();
 
-  var row = "<tr><th>"+inputtedSemesterName+"</th><th>"+cumultativeGPA+"</th></tr>";
+  var row = "<tr><th id='semester-name'>"+inputtedSemesterName+"</th><th id='current-cumualative-gpa'>"+cumultativeGPA+"</th></tr>";
     $("tbody#cumultative-gpa").append(row);
   // return cumultativeGPA;
 }
@@ -95,13 +95,13 @@ $(document).ready(function(){
       '<div class="course" class="form-group">'+
         '<div class="row">'+
           '<div class="col-md-5">'+
-            '<input type="text" placeholder="Course Name" id="course-name" class="form-control">'+
+            '<input type="text" placeholder="Course Name" id="course-name" class="form-control" required/>'+
           '</div>'+
          ' <div class="col-md-5">'+
-            '<input type="text" placeholder="Course Credits" id="course-credits" class="form-control">'+
+            '<input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required/>'+
           '</div>'+
          ' <div class="col-md-2">'+
-            '<select name="letter-grade" id="letter-grade" class="form-select">'+
+            '<select name="letter-grade" id="letter-grade" class="form-select" required/>'+
               '<option value="">Letter Grade</option>'+
               '<option value="4.0">A+</option>'+
               '<option value="4.0">A</option>'+
@@ -123,6 +123,12 @@ $(document).ready(function(){
   });
 
   $("#calculate-gpa").click(function(){
+
+    const inpObj = document.getElementById("gpaForm");
+    if (!inpObj.checkValidity()) 
+    {
+      document.getElementById("course-name").innerHTML = inpObj.validationMessage;
+    }
 
     event.preventDefault();
     

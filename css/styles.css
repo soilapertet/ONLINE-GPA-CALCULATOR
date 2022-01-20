@@ -2,14 +2,32 @@
 {
   scroll-behavior: smooth;
 }
-h1
+body 
+{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+h1,h2
 {
   text-align:center;
 }
-img
+.responsive
 {
-  margin-left: 30%;
+  margin-left: 10%;
   max-width: 100%;
+}
+.card
+{
+  margin-top: 20px;
+  background: linear-gradient(#cfd9df, #e2ebf0);
+  font-size:20px;
+  opacity:0.9;
+}
+.table
+{
+  width: 80%;
 }
 .add
 {

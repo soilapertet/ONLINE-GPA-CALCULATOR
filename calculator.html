@@ -12,28 +12,39 @@
 </head>
 <body>
   <div class="container">
-    <h1>GPA Calculator</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. 
-        Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis 
-        ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia 
-        arcu eget nulla. 
-      </p>
-    <h2>Basic instructions</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. 
-        Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis 
-        ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. 
-      </p>
-      <ul>
-        <li>Course Name</li>
-        <li>Course Credits</li>
-        <li>Letter Grade</li>
-      </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <h2>Formula</h2>
+    <div class="card">
+      <div class="card-body">
+        <h1>GPA Calculator</h1>
         <p>
-          <img src="img/GPAformula.png" alt="Image of GPA formula">
+          Keeping track of one's GPA throughout the semester is quite tedious. Furthermore, with 
+          graduation dates (for upper-years) and completion dates of your academic year (lower years) 
+          approaching, it becomes necessary to know one's Cumulative GPA to determine where they stand 
+          in terms of graduating or progressing to the upcoming year.
+          Thanks to our Online GPA calculator, one can keep track of their GPA over the semester and throughout
+          years, rendering any worries that may occur useless.The web tool also displays your chances of graduating or 
+          progressing to the next year.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h2>Basic instructions</h2>
+        <p>
+          Not much is required of you! Just fill in the form entries and let us do the work! Before filling out 
+          the form, please have the following ready:
+        </p>
+        <ul>
+          <li>Course Name</li>
+          <li>Course Credits</li>
+          <li>Letter Grade</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h2>Formula</h2>
+        <p>
+          <img src="img/GPAformula.png" alt="Image of GPA formula" class="responsive">
           <br>
           Where:
           <br>
@@ -41,8 +52,14 @@
            <br>
            Total Credits Attempted = Sum of Course Credits taken
         </p>
-      <h2>GPA Reference Scale</h2>
-      <img src="img/GPAcalculationimage.png" alt="Image of GPA reference scale">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h2>GPA Reference Scale</h2>
+        <img src="img/GPAcalculationimage.png" alt="Image of GPA reference scale" class="responsive">
+      </div>
+    </div>
       <br>
       <br>
       <h1>Let's get that GPA!!</h1>
@@ -52,7 +69,7 @@
               <div class="card-header">
                 <div class="row">
                   <div class="col-md-12">
-                    <h2><input class="border" id="semester-name" type="text" placeholder="Semester e.g Fall 2021" required></h2>
+                    <h2><input class="border" id="semester-name" type="text" placeholder="Semester e.g Fall 2021" required="true"></h2>
                   </div>
                 </div>
               </div>
@@ -62,13 +79,13 @@
                     <div class="course" class="form-group">
                       <div class="row">
                         <div class="col-md-5">
-                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required>
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required/>
                         </div>
                         <div class="col-md-5">
-                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required>
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required/>
                         </div>
                         <div class="col-md-2">
-                          <select name="letter-grade" id="letter-grade" class="form-select" required>
+                          <select name="letter-grade" id="letter-grade" class="form-select" required="true">
                             <option value="">Letter Grade</option>
                             <option value="4.0">A+</option>
                             <option value="4.0">A</option>
@@ -90,13 +107,13 @@
                     <div class="course" class="form-group">
                       <div class="row">
                         <div class="col-md-5">
-                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required>
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required/>
                         </div>
                         <div class="col-md-5">
-                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required>
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required/>
                         </div>
                         <div class="col-md-2">
-                          <select name="letter-grade" id="letter-grade" class="form-select" required>
+                          <select name="letter-grade" id="letter-grade" class="form-select" required="true">
                             <option value="">Letter Grade</option>
                             <option value="4.0">A+</option>
                             <option value="4.0">A</option>
@@ -118,13 +135,13 @@
                     <div class="course" class="form-group">
                       <div class="row">
                         <div class="col-md-5">
-                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required>
+                          <input type="text" placeholder="Course Name" id="course-name" class="form-control" required/>
                         </div>
                         <div class="col-md-5">
-                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required>
+                          <input type="text" placeholder="Course Credits" id="course-credits" class="form-control" required/>
                         </div>
                         <div class="col-md-2">
-                          <select name="letter-grade" id="letter-grade" class="form-select" required>
+                          <select name="letter-grade" id="letter-grade" class="form-select" required="true">
                             <option value="">Letter Grade</option>
                             <option value="4.0">A+</option>
                             <option value="4.0">A</option>
@@ -153,32 +170,28 @@
             </div>
           </div>
         </div>
-    <div id="display">
-      <img src="img/gpa_background.jpg" alt="Image of shape">
-      <div id="gpa-result">
-      <!-- <h2>Your <br> Cumultative <br> GPA is:<br>3.45</h2> -->
-      </div>
-      <div id="display-chances">
-
-      </div>
-    </div>
     <br>
     <div id="gpa-history">
-      <h1>GPA LOG</h1>
-      <h3>Track your progress!!</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Semester</th>
-            <th scope="col">Cumultative GPA</th>
-          </tr>
-        </thead>
-        <tbody id="cumultative-gpa">
-          
-        </tbody>
-      </table>
-      <br>
-      <button class="button-17" id="add-semester">Add Semester</button>
+      <div class="card">
+        <div class="card-body">
+          <h1>GPA LOG</h1>
+          <h3>Track your progress!!</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Semester</th>
+                <th scope="col">Cumulative GPA</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="cumultative-gpa">
+              
+            </tbody>
+          </table>
+          <br>
+          <button class="button-17" id="add-semester">Add Semester</button>
+        </div>
+      </div>
     </div>
   </div>
 </body>
