@@ -4,7 +4,7 @@
 var courses = []; 
 var courseGradePoints= [];
 var credits = [];
-var totalWeightedGPA, totalCredits,semesterGPA,cumultativeGPA,gradePointsEarned,creditsEarned,requiredGPA;
+var totalWeightedGPA, totalCredits,semesterGPA,cumulativeGPA,gradePointsEarned,creditsEarned,requiredGPA;
 
 // Create a 'Course' constructor function
 function Course(course,credits,letterGrade){
@@ -39,8 +39,8 @@ function calculateSemesterGPA(){
 
 }
 
-// Create a function to calculate Cumultative GPA
-function calculateCumultativeGPA(){
+// Create a function to calculate Cumulative GPA
+function calculateCumulativeGPA(){
 
   var gradePointsEarned = 0;
 
@@ -56,29 +56,29 @@ function calculateCumultativeGPA(){
     console.log(creditsEarned);
   }
 
-  var cumultativeGPA = parseFloat((gradePointsEarned / creditsEarned).toFixed(2));
-  console.log(cumultativeGPA);
+  var cumulativeGPA = parseFloat((gradePointsEarned / creditsEarned).toFixed(2));
+  console.log(cumulativeGPA);
 
   var inputtedSemesterName = $("input#semester-name").val();
   var requiredGPA = parseFloat($("input#required-gpa").val());
 
-  if(requiredGPA < cumultativeGPA)
+  if(requiredGPA < cumulativeGPA)
   {
-    var displayMessage = "Your Cumulatative GPA is above the required GPA!"+
+    var displayMessage = "Your Cumulative GPA is above the required GPA!"+
                          "Your chances of graduating/progressing to the next year are HIGH!!!!"+
                          " Keep it up!!";
   }
-  else if (requiredGPA === cumultativeGPA)
+  else if (requiredGPA === cumulativeGPA)
   {
-    var displayMessage = "Your Cumulatative GPA is equal to the required GPA! "+
+    var displayMessage = "Your Cumulative GPA is equal to the required GPA! "+
                          "You HAVE A CHANCE of graduating/progressing to the next year!!!"+
                          "There's always room for improvement!"+
                          "Let's put in threefold the effort and surpass the required GPA!!!!!";
                          
   }
-  else if(requiredGPA > cumultativeGPA)
+  else if(requiredGPA > cumulativeGPA)
   {
-    var displayMessage = "Your Cumulatative GPA is below required GPA! "+
+    var displayMessage = "Your Cumulative GPA is below required GPA! "+
                          "Your chances of graduating/progressing to the next year are LOW!!!!"+
                          "Let's leave nothing to chance!!!"+
                          "Let's get up and running and increase that GPA!!!!!";
@@ -88,10 +88,10 @@ function calculateCumultativeGPA(){
     return false;
   }
   
-  var row = "<tr><th id='semester-name'>"+inputtedSemesterName+"</th><th id='current-cumualative-gpa'>"+cumultativeGPA+
+  var row = "<tr><th id='semester-name'>"+inputtedSemesterName+"</th><th id='current-cumualative-gpa'>"+cumulativeGPA+
             "</th><th id='display-message'>"+displayMessage+"</th></tr>";
-    $("tbody#cumultative-gpa").append(row);
-  // return cumultativeGPA;
+    $("tbody#cumulative-gpa").append(row);
+  // return cumulativeGPA;
 }
 
 $(document).ready(function(){
@@ -176,7 +176,7 @@ $(document).ready(function(){
 
     });
 
-    calculateCumultativeGPA();
+    calculateCumulativeGPA();
 
   });
 });
