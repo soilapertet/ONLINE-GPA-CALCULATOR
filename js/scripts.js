@@ -133,17 +133,16 @@ $(document).ready(function(){
     $("#gpaForm")[0].reset();
 
   });
-//function for image upload
-function showPreview(event) {
-  if (event.target.files.length > 0) {
-    var src = URL.createObjectURL(event.target.files[0]);
-    var preview = document.getElementById("file-ip-1-preview");
-    preview.src = src;
-    preview.style.display = "block";
-  };
-};
 
-$(document).ready(function () {
+  //Function for image upload
+  function showPreview(event) {
+    if (event.target.files.length > 0) {
+      var src = URL.createObjectURL(event.target.files[0]);
+      var preview = document.getElementById("file-ip-1-preview");
+      preview.src = src;
+      preview.style.display = "block";
+    };
+  };
 
   $("#myBt").click(function () {
     $("p").show();
@@ -154,6 +153,7 @@ $(document).ready(function () {
     $(".list").show();
 
   });
+
   $("#myBtn").click(function () {
     $("#more").hide();
     $("#dot").show();
@@ -175,7 +175,6 @@ $(document).ready(function () {
       alert("please Enter your name");
     } else if (phone == "") {
       alert("Please input your phone number");
-
     } else if (level == "") {
       alert("Please select your Level");
     } else if (institute == "") {
@@ -186,6 +185,7 @@ $(document).ready(function () {
      else {
       return true;
     };
+
     $("#upName").html("Your Name:   " + name);
     $("#upPhone").html("Your Phone: " + phone);
     $("#uplevel").html("Study Level: " + level);
@@ -195,9 +195,6 @@ $(document).ready(function () {
     document.getElementById("myForm").reset();
     $(".pic").hide();
     $("#tit").show();
+
   });
-
-  
-
-
-});
+})
