@@ -1,0 +1,198 @@
+body {
+  background-color: rgb(181, 197, 197);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu{ 
+  list-style : none;
+  float: right;
+  margin-top : 10px;
+}
+ .menu li {
+  margin-right:20px;
+  display:inline;
+  float:right;
+}
+
+nav a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.45s;
+  float:right;
+}
+nav a:hover {
+  color:orangered;
+  padding-bottom: 10px;
+  border-bottom: 3px solid orangered
+}
+nav a:not(:last-child) {
+  margin-right: 30px;
+}
+
+.center {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  width: 230px;
+  padding: 20px;
+  background: #fff;
+}
+
+.form-input input {
+  display: none;
+
+}
+
+.form-input label {
+  display: block;
+  width: 75%;
+  height: 35px;
+  margin-left: 12%;
+  line-height: 35px;
+  text-align: center;
+  background: orangered;
+  color: #fff;
+  font-size: 15px;
+  text-transform: Uppercase;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.form-input img {
+  width: 100%;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.yp {
+  color: brown;
+  margin-left: 1px;
+}
+
+#uname,
+#email,
+textarea {
+  width: 70%;
+  border: 1px solid orangered;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+label {
+  color: orangered;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+}
+
+#tit {
+  display: none;
+}
+
+button {
+  color: white;
+  width: 95px;
+  border: none !important;
+  background-color: orangered;
+  border-radius: 12px;
+}
+
+#save {
+  background-color: orangered;
+  border-radius: 12px;
+  border: none !important;
+  width: 100px;
+  justify-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+#save:hover {
+  opacity: .4;
+}
+
+#smessage {
+  background-color: orangered;
+  border-radius: 12px;
+  border: none !important;
+  width: 120px;
+  color: #fff;
+  font-weight: bold;
+}
+#myBtn{
+  display: none;
+}
+.list{
+  display: none;
+}
+h3, h2, h1{
+  color: orangered;
+}
+#check{
+  border: none;
+  border-radius: 8px;
+  color: orangered;
+  background-color:transparent;
+}
+#clic{
+  color: orangered;
+  text-decoration: none;
+}
+#clic:hover{
+  color: white;
+  font-weight: bold;
+  background-color: orangered;
+}
+#calculate{
+  text-decoration: none;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 5px;
+}
+#back{
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  text-align: right;
+}
+.site{
+  text-decoration: none;
+  color: orangered;
+}
+.fab{
+  color: orangered;
+  font-size: 35px;
+  width: 50px;
+}
+.mail ul{
+  list-style: none;
+}
+footer .mail ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#sub{
+  border: none;
+  background-color: orangered;
+  color: #fff;
+  height: 35px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+#residence{
+  display: none;
+}
+#semail{
+  width: 70%;
+  height: 35px;
+}
