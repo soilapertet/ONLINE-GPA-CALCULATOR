@@ -1,33 +1,87 @@
-*
-{
-  scroll-behavior: smooth;
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgb(181,197,197);
+  font-family: "Segoe UI",Verdana, Geneva, Tahoma, sans-serif;
 }
-body 
+.menu 
 {
-  background-image: url(../img/background.jpg);
+  margin: 0;
+  list-style: none;
+  float:right;
+  margin-top: 10px;
+}
+.menu li 
+{
+  margin-right: 20px;
+  display: inline;
+  float:right;
+}
+a 
+{
+  font-size: 22px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.45s;
+}
+a:hover
+{
+  color: red;
+  padding-bottom: 10px;
+  border-bottom:3px solid red;
+}
+a:not(:last-child) {
+  margin-right: 30px;
+}
+#about
+{
+  background-image: url(../img/calculator-bg.jpg);
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-h1,h2
+#about p 
+{
+  display:block;
+  margin-left:40%;
+  margin-right:10%;
+  font-size: 25px;
+  color :#F2EAE3;
+}
+h1,h2 
 {
   text-align:center;
+}
+h3
+{
+  color: red;
+}
+#gpa-section
+{
+  margin-top: 20px;
 }
 .responsive
 {
   margin-left: 10%;
   max-width: 100%;
 }
-.card
+.card,th
 {
-  margin-top: 20px;
-  background: linear-gradient(#cfd9df, #e2ebf0);
-  font-size:20px;
-  opacity:0.9;
+  color :#F2EAE3;
 }
-.table
+.card-header,.card-footer
 {
-  width: 80%;
+  background: linear-gradient(to bottom,#434343,#000000);
+  font-size:20px;
+}
+.card-body
+{
+  background: linear-gradient(to bottom,#868f96, #596164);
+  font-size:20px;
 }
 .add
 {
@@ -133,25 +187,38 @@ h1,h2
 .button-17:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
-#display h2
+.site
 {
-  text-align:center;
-  margin-top:10px;
+  text-decoration: none;
+  color:orangered;
 }
-/* #gpa-history
+.fab
 {
-  display:none;
-} */
-#display
-{
-  position:relative;
-  display:none;
+  color:red;
+  font-size: 35px;
+  width:50px;
 }
-#display h2 
+.mail ul 
 {
-  position: absolute;
-  bottom: 19%;
-  left:33%;
-  color:#F6F9FE;
-  font-size: 40px;
+  list-style: none;
+}
+footer .mail ul li a
+{
+  text-decoration: none;
+  color:#fff;
+}
+#sub
+{
+  border: none;
+  background-color:red;
+  color:#fff;
+  height: 35px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top:15px;
+}
+#semail
+{
+  width: 70%;
+  height: 35px;
 }
