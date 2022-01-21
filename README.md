@@ -17,7 +17,7 @@ https://soilapertet.github.io/ONLINE-GPA-CALCULATOR
 * Navigate into the directory within the local repository
 * Open the local repository on your preferred text editor
 ## Known Bugs
-The web tool does not show the selected profile picture after clicking 'Upload Picture'
+There are currently no known bugs, but if you come across any, feel free to reach out to me through the provided email-address(es)
 ## Technologies Used
 * HTML
 * CSS
