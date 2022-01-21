@@ -64,6 +64,15 @@ function calculateCumulativeGPA(){
     $("tbody#cumulative-gpa").append(row);
 
 }
+//Function for image upload
+function showPreview(event) {
+  if (event.target.files.length > 0) {
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("file-ip-1-preview");
+    preview.src = src;
+    preview.style.display = "block";
+  };
+};
 
 // User Interface Logic
 
@@ -145,14 +154,14 @@ $(document).ready(function(){
   });
 
   //Function for image upload
-  function showPreview(event) {
-    if (event.target.files.length > 0) {
-      var src = URL.createObjectURL(event.target.files[0]);
-      var preview = document.getElementById("file-ip-1-preview");
-      preview.src = src;
-      preview.style.display = "block";
-    };
-  };
+  // function showPreview(event) {
+  //   if (event.target.files.length > 0) {
+  //     var src = URL.createObjectURL(event.target.files[0]);
+  //     var preview = document.getElementById("file-ip-1-preview");
+  //     preview.src = src;
+  //     preview.style.display = "block";
+  //   };
+  // };
 
   $("#myBt").click(function () {
     $("p").show();
