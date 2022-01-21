@@ -7,8 +7,10 @@ This is a web application which calculates the user's cumulative GPA and keep tr
 Date of current version: 20/01/2022
 
 ## Screenshot
+<img src="https://zippyimage.com/images/2022/01/20/53eaa789258b2bec4e05fdff9d8370e5.png" alt="Screenshot of the landing page for the project">
 
 ## Live demo
+https://soilapertet.github.io/ONLINE-GPA-CALCULATOR
 ## Setup/Installation Requirements
 * Navigate to the terminal on your PC; you can use Ctrl + Alt +T
 * Type in the command: git clone https://github.com/soilapertet/ONLINE-GPA-CALCULATOR.git
