@@ -1,6 +1,6 @@
 # ONLINE GPA CALCULTOR
 
-#### By **Daniel Njoroge, Lovelyn Odhiambo, Nicholas Kebut, Soila Pertet**
+#### By **Daniel Njoroge, Soila Pertet,Nicholas Kebut**
 ## Description
 This is a web application which calculates the user's cumulative GPA and keep track of their GPA over the semester and throughout years. The target audience for this web application are univeristy students but plans are underway to extend it to high school students. Aside from calculating the cumulative GPA, the web tool also displays one's chances of graduating or progressing to the next year.
 </br>
@@ -32,5 +32,5 @@ If you run into any bugs or issues when running the code, feel free to reach out
 * <em>soila.pertet@student.moringaschool.com</em> 
 ### License
 *MIT License*
-Copyright (c) 2022 **Daniel Njoroge, Lovelyn Odhiambo, Nicholas Kebut, Soila Pertet**
+Copyright (c) 2022 **Daniel Njoroge, Soila Pertet, Nicholas Kebut**
 
