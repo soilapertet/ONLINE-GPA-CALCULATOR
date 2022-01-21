@@ -17,7 +17,7 @@ https://soilapertet.github.io/ONLINE-GPA-CALCULATOR
 * Navigate into the directory within the local repository
 * Open the local repository on your preferred text editor
 ## Known Bugs
-There's currently no feature to remove a course, which lowers the sser interactivity and might affect the result of the cumultative GPA; we're yet to add an optional 'close button' feature to remove a course.
+The web tool does not show the selected profile picture after clicking 'Upload Picture'
 ## Technologies Used
 * HTML
 * CSS
