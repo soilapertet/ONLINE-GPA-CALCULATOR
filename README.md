@@ -32,5 +32,5 @@ If you run into any bugs or issues when running the code, feel free to reach out
 * <em>soila.pertet@student.moringaschool.com</em> 
 ### License
 *MIT License*
-Copyright (c) 2022 **Daniel Njoroge, Soila Pertet, Nicholas Kebut**
+Copyright (c) 2022 **Daniel Njoroge, Soila Pertet**
 
